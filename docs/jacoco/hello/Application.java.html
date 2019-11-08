@@ -14,22 +14,22 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-<span class="nc" id="L17">        http</span>
-<span class="nc" id="L18">        .authorizeRequests()</span>
-<span class="nc" id="L19">            .antMatchers(&quot;/&quot;,&quot;/login**&quot;,&quot;/webjars/**&quot;,&quot;/error**&quot;)</span>
-<span class="nc" id="L20">            .permitAll()</span>
-<span class="nc" id="L21">        .anyRequest()</span>
-<span class="nc" id="L22">            .authenticated()</span>
-<span class="nc" id="L23">        .and()</span>
-<span class="nc" id="L24">            .oauth2Login().loginPage(&quot;/login&quot;)</span>
-<span class="nc" id="L25">        .and()</span>
-<span class="nc" id="L26">            .logout()</span>
-<span class="nc" id="L27">            .deleteCookies(&quot;remove&quot;)</span>
-<span class="nc" id="L28">            .invalidateHttpSession(true)</span>
-<span class="nc" id="L29">            .logoutUrl(&quot;/logout&quot;)</span>
-<span class="nc" id="L30">            .logoutSuccessUrl(&quot;/&quot;)</span>
-<span class="nc" id="L31">            .permitAll();</span>
-<span class="nc" id="L32">    }</span>
+<span class="fc" id="L17">        http</span>
+<span class="fc" id="L18">        .authorizeRequests()</span>
+<span class="fc" id="L19">            .antMatchers(&quot;/&quot;,&quot;/login**&quot;,&quot;/webjars/**&quot;,&quot;/error**&quot;)</span>
+<span class="fc" id="L20">            .permitAll()</span>
+<span class="fc" id="L21">        .anyRequest()</span>
+<span class="fc" id="L22">            .authenticated()</span>
+<span class="fc" id="L23">        .and()</span>
+<span class="fc" id="L24">            .oauth2Login().loginPage(&quot;/login&quot;)</span>
+<span class="fc" id="L25">        .and()</span>
+<span class="fc" id="L26">            .logout()</span>
+<span class="fc" id="L27">            .deleteCookies(&quot;remove&quot;)</span>
+<span class="fc" id="L28">            .invalidateHttpSession(true)</span>
+<span class="fc" id="L29">            .logoutUrl(&quot;/logout&quot;)</span>
+<span class="fc" id="L30">            .logoutSuccessUrl(&quot;/&quot;)</span>
+<span class="fc" id="L31">            .permitAll();</span>
+<span class="fc" id="L32">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

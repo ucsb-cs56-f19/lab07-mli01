@@ -14,14 +14,14 @@ import java.util.HashMap;
 import com.nimbusds.oauth2.sdk.client.ClientReadRequest;
 
 @Controller
-<span class="nc" id="L17">public class WebController {</span>
+<span class="fc" id="L17">public class WebController {</span>
 
     @Autowired
     private ClientRegistrationRepository clientRegistrationRepository;
 
     @GetMapping(&quot;/&quot;)
     public String getHomepage(Model model, OAuth2AuthenticationToken oAuth2AuthenticationToken) {
-<span class="nc" id="L24">        return &quot;index&quot;;</span>
+<span class="fc" id="L24">        return &quot;index&quot;;</span>
     }
 
     @GetMapping(&quot;/login&quot;)
