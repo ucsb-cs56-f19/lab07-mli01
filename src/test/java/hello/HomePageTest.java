@@ -72,11 +72,11 @@ public class HomePageTest {
     }
 
 	@Test
-	public void getHomePage_hasCorrectFirstLink() throws Exception {
+	public void getHomePage_hasCorrectFirstLinkTitle() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.TEXT_HTML))
                 .andExpect(status().isOk())
                 .andExpect(xpath("/html/body/div/nav/div/ul[1]/li[2]/a").exists())
-                .andExpect(xpath("/html/body/div/nav/div/ul[1]/li[2]/a").string("Earthquakes"));
+                .andExpect(xpath("/html/body/div/nav/div/ul[1]/li[2]/a").string("Earthquake Search"));
     }
 
 
