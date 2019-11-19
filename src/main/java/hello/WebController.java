@@ -52,6 +52,8 @@ public class WebController {
 
 	@GetMapping("/earthquakes/search")
 	public String getEarthquakesSearch(Model model, OAuth2AuthenticationToken oAuth2AuthenticationToken, EqSearch eqSearch) {
+		// send information to view
+		model.addAttribute("eqSearch", eqSearch);
 		return "earthquakes/search";
 	}
 }
