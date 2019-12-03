@@ -34,22 +34,11 @@ public class UserPageTest {
 	private ClientRegistrationRepository crr;
 
     @Test
-    public void navbar_has_userlink() throws Exception {
+    public void navbar_has_userlink() throws Exception {        
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.TEXT_HTML))
                 .andExpect(status().isOk())
                 .andExpect(xpath("/html/body/div/nav/div/ul[1]/li[3]/a").exists())
-                .andExpect(xpath("/html/body/div/nav/div/ul[1]/li[3]/a").string("Users"));
+                .andExpect(xpath("/html/body/div/nav/div/ul[1]/li[3]/a").string("Users"))
     }
-
-    /*
-    @Test
-    public void navbar_userlink_links_correct() throws Exception {
-        mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.TEXT_HTML))
-                .andExpect(status().isOk())
-                .andExpect(xpath("/html/body/div/nav/div/ul[1]/li[3]/a").exists())
-                .andExpect(xpath("/html/body/div/nav/div/ul[1]/li[3]/a").attr("href").equals("/users"));
-    }
-    */
-
 
 }
