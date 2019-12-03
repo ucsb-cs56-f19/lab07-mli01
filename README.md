@@ -1,6 +1,8 @@
-Documentation: https://ucsb-cs56-f19.github.io/lab07-mli01/
+Github pages webpage (Javadoc and Jacoco Report): https://ucsb-cs56-f19.github.io/lab07-mli01/
 </br>
 Heroku: https://cs56-f19-lab07-mli01.herokuapp.com
+</br>
+Travis-CI: https://travis-ci.org/ucsb-cs56-f19/lab07-mli01
 
 A simple Spring Boot webapp using:
 * Thymeleaf templating
