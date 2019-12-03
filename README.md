@@ -1,4 +1,4 @@
-Documentation: https://ucsb-cs56-f19.github.io/lab07-mli01/apidocs/
+Documentation: https://ucsb-cs56-f19.github.io/lab07-mli01/
 </br>
 Heroku: https://cs56-f19-lab07-mli01.herokuapp.com
 
